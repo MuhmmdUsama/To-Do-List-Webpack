@@ -1,1 +1,48 @@
-# To-Do-List-Webpack
+# To-Do-List
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+
+## Built With
+
+- Html
+- Css
+- Js
+- Bootstrap
+- Webpack
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps:
+
+- [Download](https://github.com/MuhmmdUsama/To-Do-List/archive/refs/heads/main.zip)
+- Open your terminal or command line
+- Run `git clone` and Paste the link
+- After the clone, type in the command `cd To-Do-List` to access the directory on the terminal
+- run `npm install`.
+- Run `npm run dev` and it will automatically load in your browser
+- Run `npm run build` and it will build and optimized files for production mood
+
+##👤 Author <img src="https://avatars.githubusercontent.com/u/45886560?s=400&u=398b393687a05aa7e82482a81f0ed9c418f8f440&v=4" width="50px"/>
+
+- GitHub: [@muhmmdusama](https://github.com/muhmmdusama)
+- Twitter: [@muhmmdusama](https://twitter.com/muhmmdusama)
+- LinkedIn: [muhmmdusama](https://linkedin.com/in/muhmmdusama)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/MuhmmdUsama/To-Do-List/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
