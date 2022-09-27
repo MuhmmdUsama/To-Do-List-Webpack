@@ -23,16 +23,17 @@ function showData() {
     deleteAll('show');
   } else {
     deleteAll('none');
-    const tableBody = document.querySelector('.todo-tbody');
-    tableBody.innerHTML = `
-    <tr>
-          <td id = "td-id">Zero</td>
-          <td></td>
-          <td class ='todo-title'>NOTHING TO-DO</td>
-          <td>-</td>
-          <td>-</td>
-    </tr>
-          `;
+    localStorage.clear();
+    // const tableBody = document.querySelector('.todo-tbody');
+    // tableBody.innerHTML = `
+    // <tr>
+    //       <td id = "td-id">Zero</td>
+    //       <td></td>
+    //       <td class ='todo-title'>NOTHING TO-DO</td>
+    //       <td>-</td>
+    //       <td>-</td>
+    // </tr>
+    //       `;
   }
 }
 
