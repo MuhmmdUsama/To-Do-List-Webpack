@@ -14,18 +14,7 @@ export let temp; // eslint-disable-line
 // let chekItem;
 
 // ########################## Data Storage ####
-export let todosStorage = JSON.parse(localStorage.getItem('task')) || [ // eslint-disable-line
-  {
-    description: 'gym',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'visite th doctor',
-    completed: false,
-    index: 2,
-  },
-];
+export let todosStorage = JSON.parse(localStorage.getItem('task')) || []; // eslint-disable-line
 
 // ########################## Create Data #####
 function submitDatatodos(e) {
