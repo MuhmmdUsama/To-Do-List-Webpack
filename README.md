@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps:
 - Run `git clone` and Paste the link
 - After the clone, type in the command `cd To-Do-List` to access the directory on the terminal
 - run `npm install`.
-- Run `npm run dev` and it will automatically load in your browser
+- Run `npm run dev` and it will load a live server in http://localhost:8080/
 - Run `npm run build` and it will build and optimized files for production mood
 
 ##👤 Author <img src="https://avatars.githubusercontent.com/u/45886560?s=400&u=398b393687a05aa7e82482a81f0ed9c418f8f440&v=4" width="50px"/>
