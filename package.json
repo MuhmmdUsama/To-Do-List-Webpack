@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "muhmmd-usama",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -33,6 +34,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "bootstrap": "^5.2.1"
+    "bootstrap": "^5.2.1",
+    "gh-pages": "^4.0.0"
   }
 }
