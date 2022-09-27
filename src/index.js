@@ -2,6 +2,7 @@ import './index.css';
 import { deleteDataTodoRow } from './moduls/delete.js'; // eslint-disable-line
 import updateData from './moduls/update.js'; // eslint-disable-line
 import showData from './moduls/read.js'; // eslint-disable-line
+import completedTask from './moduls/completed.js'; // eslint-disable-line
 
 export const title = document.getElementById('title'), // eslint-disable-line
   submit = document.getElementById('submit'),
@@ -10,7 +11,7 @@ export const title = document.getElementById('title'), // eslint-disable-line
 
 export let mood = 'creat'; // eslint-disable-line
 export let temp; // eslint-disable-line
-let chekItem;
+// let chekItem;
 
 // ########################## Data Storage ####
 export let todosStorage = JSON.parse(localStorage.getItem('task')) || [ // eslint-disable-line
@@ -54,21 +55,6 @@ function submitDatatodos(e) {
 
 // ########################## Read Data
 showData();
-
-// ########################## Check if task completed or not
-function completedTask(e) {
-  chekItem = e.target;
-  if (chekItem.classList.contains('check')) {
-    const checkLocation = chekItem.accessKey;
-    chekItem.classList.toggle('done');
-    if (chekItem.classList.contains('done')) {
-      todosStorage[checkLocation].completed = true;
-    } else {
-      todosStorage[checkLocation].completed = false;
-    }
-    localStorage.setItem('task', JSON.stringify(todosStorage));
-  }
-}
 
 // ########################## Clear All Done Tasks
 function clearAllDone() {
