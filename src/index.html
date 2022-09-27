@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's To-Do</title>
+  </head>
+  <body>
+    <header class="head"></header>
+    <div class="crud">
+      <h2>Today's To-Do</h2>
+      <form class="inputs">
+        <input
+          type="text"
+          placeholder="Task-To-Do"
+          id="title"
+          class="inputField"
+          required
+        />
+        <button id="submit" type="submit">
+          <i class="bi-box-arrow-down"></i>
+        </button>
+      </form>
+
+      <div class="outputs">
+        <hr />
+        <div class="table">
+          <table>
+            <tr class="table-head">
+              <th>No</th>
+              <th><i class="bi-check2-all"></i></th>
+              <th class="task-head">Task-To-Do</th>
+              <th class="upAndDelStyle bi bi-pencil-square"></th>
+              <th class="upAndDelStyle bi bi-trash"></th>
+            </tr>
+            <tbody id="todo-tbody" class="todo-tbody"></tbody>
+          </table>
+        </div>
+
+        <hr />
+        <div class="clearDiv">
+          <div class="delete-all"></div>
+
+          <button id="clear-done" class="clear-done">
+            Clear All Done <i class="bi-check2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
