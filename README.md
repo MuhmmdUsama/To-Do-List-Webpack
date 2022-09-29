@@ -1,6 +1,9 @@
 # To-Do-List
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 
+
+<img src="https://user-images.githubusercontent.com/45886560/192831533-cc74b20f-e4d0-410b-bd28-59ddc01a84ec.mp4" > 
+
 ## Built With
 
 - Html
