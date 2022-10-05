@@ -72,5 +72,22 @@ describe('test the Add and Delete items function', () => {
     expect(todosStorage).toHaveLength(2);
     expect(todosStorage[1].description).toBe('task2');
   });
+
+  test('Remove Task', () => { 
+    
+    // Arrange 
+    const newTask3 = { description: 'task3', completed: false, index: 3, }; 
+    
+    // Act 
+    todosStorage.push(newTask3); 
+    expect(todosStorage).toHaveLength(3);
+    expect(todosStorage[0].description).toBe('task1');
+    expect(todosStorage[1].description).toBe('task2');
+    expect(todosStorage[2].description).toBe('task3');
+    deleteDataTodoRow(todosStorage[0]); 
+    deleteDataTodoRow(todosStorage[1]); 
+
+    // Assert 
+    expect(todosStorage[0].description).toBe('task3'); expect(todosStorage).toHaveLength(1); }); 
 });
 
