@@ -41,15 +41,12 @@ document.body.innerHTML = `
 </div>
 `;
 
-const { todosStorage } = require('../index');
+const { todosStorage } = require('../index.js');
 
 describe('test the clear all done Tasks function', () => {
   test('clear all done Tasks', () => {
     // Arrange
-    const clearDone = jest.fn(() => {
-      return todosStorage.filter((e) => e.completed !== true);
-       
-    });
+    const clearDone = jest.fn(() => todosStorage.filter((e) => e.completed !== true));
 
     const newTask1 = { description: 'task1', completed: true, index: 1 };
 
@@ -58,17 +55,17 @@ describe('test the clear all done Tasks function', () => {
     const newTask3 = { description: 'task3', completed: false, index: 3 };
 
     const newTask4 = { description: 'task4', completed: false, index: 4 };
-
+    // Act
     todosStorage.push(newTask1);
     todosStorage.push(newTask2);
     todosStorage.push(newTask3);
     todosStorage.push(newTask4);
 
     // Clearing all completed task
-    let clearAllCompleted = clearDone();
+    const clearAllCompleted = clearDone();
+    // Assert
     expect(clearAllCompleted[0].completed).toBeFalsy();
     expect(clearAllCompleted[1].completed).toBeFalsy();
-    
     expect(clearAllCompleted).toHaveLength(2);
     expect(clearAllCompleted[0].description).toBe('task3');
     expect(clearAllCompleted[1].description).toBe('task4');

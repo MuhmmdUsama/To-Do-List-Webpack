@@ -41,14 +41,12 @@ document.body.innerHTML = `
 </div>
 `;
 
-const { todosStorage } = require('../index');
+const { todosStorage } = require('../index.js');
 
 describe('test edit Tasks', () => {
   test('edit Tasks', () => {
     // Arrange
-    const edit = jest.fn((index, status) => {
-      return (todosStorage[index].description = status);
-    });
+    const edit = jest.fn((index, status) => { (todosStorage[index].description = status); });
 
     const newTask1 = { description: 'task1', completed: false, index: 1 };
 

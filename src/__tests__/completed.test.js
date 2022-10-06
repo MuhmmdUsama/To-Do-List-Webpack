@@ -41,14 +41,12 @@ document.body.innerHTML = `
 </div>
 `;
 
-const { todosStorage } = require('../index');
+const { todosStorage } = require('../index.js');
 
 describe('test done Tasks', () => {
   test('done Tasks', () => {
-
-    const done = jest.fn((index, status) => {
-      return todosStorage[index].completed = status;
-    });
+    // Arrang
+    const done = jest.fn((index, status) => { todosStorage[index].completed = status; });
 
     const newTask1 = { description: 'task1', completed: false, index: 1 };
 
@@ -57,7 +55,7 @@ describe('test done Tasks', () => {
     const newTask3 = { description: 'task3', completed: false, index: 3 };
 
     const newTask4 = { description: 'task4', completed: false, index: 4 };
-
+    // Act
     todosStorage.push(newTask1);
     todosStorage.push(newTask2);
     todosStorage.push(newTask3);
@@ -65,9 +63,8 @@ describe('test done Tasks', () => {
 
     done(0, true);
     done(1, true);
-    
+    // Assert
     expect(todosStorage).toHaveLength(4);
-    
     expect(todosStorage[0].completed).toBeTruthy();
     expect(todosStorage[1].completed).toBeTruthy();
     expect(todosStorage[2].completed).toBeFalsy();

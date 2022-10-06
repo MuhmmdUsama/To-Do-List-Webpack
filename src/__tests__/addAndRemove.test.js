@@ -45,9 +45,8 @@ document.body.innerHTML = `
  </div>
  `;
 
-const { todosStorage } = require('../index');
-const { deleteDataTodoRow } = require('../moduls/delete');
-const { updateData } = require('../moduls/update');
+const { todosStorage } = require('../index.js');
+const { deleteDataTodoRow } = require('../moduls/delete.js');
 
 describe('test the Add and Delete items function', () => {
   test('Add Task', () => {
