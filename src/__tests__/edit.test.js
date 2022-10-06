@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 document.body.innerHTML = `
 <div class="crud">
 <h2>Today's To-Do</h2>
